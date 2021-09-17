@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>EXPLORING THE UNEXPLORED</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/templatemo-main.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
+
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+<body>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCdXlGcSRL9TCHgZ-KI_0JJb9SIXTOk7-Q",
+      authDomain: "tour-ca0d0.firebaseapp.com",
+      projectId: "tour-ca0d0",
+      storageBucket: "tour-ca0d0.appspot.com",
+      messagingSenderId: "70693624737",
+      appId: "1:70693624737:web:0a851a6b7631da301149e0"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    function writeData() {
+  firebase.database().ref("START").push({
+    Name:document.getElementById("name").value,
+    Email:document.getElementById("email").value,
+    Message: document.getElementById("message").value,
+  });
+  alert("Your Message is successfully sent!")
+}
+
+  </script>
+
+
+
+    <div class="fixed-side-navbar">
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#home"><span>Intro</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#aru"><span>Arunachal Pradesh</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#ass"><span>Assam</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#meg"><span>Meghalaya</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#miz"><span>Mizoram</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#nag"><span>Nagaland</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#man"><span>Manipur</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#sik"><span>Sikkim</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#tri"><span>Tripura</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact-us"><span>Contact Us</span></a></li>
+        </ul>
+    </div>
+
+    <div class="parallax-content baner-content" id="home">
+        <div class="container">
+            <div class="first-content">
+                <h1>Northeast India</h1>
+                <span><em>Exploring The Unexplored</em></span>
+                <div class="primary-button">
+                    <a href="#a-m">Explore More</a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="parallax-content projects-content" id="a-m">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="owl-testimonials" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <a href="#aru" ><img src="img/1st-item.jpg" alt=""></a>
+                                <div class="text-content">
+                                    <h4>Arunachal Pradesh</h4>
+                                    <span>Itanagar</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <a href="#ass" ><img src="img/2nd-item.jpg" alt=""></a>
+                                <div class="text-content">
+                                    <h4>Assam</h4>
+                                    <span>Guwahati</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <a href="#meg"><img src="img/3rd-item.jpg" alt=""></a>
+                                <div class="text-content">
+                                    <h4>Meghalaya</h4>
+                                    <span>Shillong</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <a href="#miz"><img src="img/4th-item.jpg" alt=""></a>
+                                <div class="text-content">
+                                    <h4>Mizoram</h4>
+                                    <span>Aizawl</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <a href="#nag" ><img src="img/5th-item.jpg" alt=""></a>
+                                <div class="text-content">
+                                    <h4>Nagaland</h4>
+                                    <span>Kohima</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <a href="#man" ><img src="img/6th-item.jpg" alt=""></a>
+                                <div class="text-content">
+                                    <h4>Manipur</h4>
+                                    <span>Imphal</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <a href="#sik" ><img src="img/7th-item.jpg" alt=""></a>
+                                <div class="text-content">
+                                    <h4>Sikkim</h4>
+                                    <span>Gangtok</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <a href="#tri"><img src="img/8th-item.jpg" alt=""></a>
+                                <div class="text-content">
+                                    <h4>Tripura</h4>
+                                    <span>Agartala</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="service-content" id="aru">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="left-text">
+                        <h4>Arunachal Pradesh</h4>
+                        <div class="line-dec"></div>
+                        <div class="line-dec"></div>
+                        <p>Arunachal Pradesh is an Indian state in Northeast India. It was formed from the erstwhile North-East Frontier Agency region, and became a state on 20 February 1987. It borders the states of Assam and Nagaland to the south.</p>
+                        <ul>
+                            <li>-  Area: 83,743 km²</li>
+                            <li>-  Capital: Itanagar </li>
+                            <li>-  Population: 12.6 lakhs (2012)</li>
+                            <li>-  Chief minister: Pema Khandu</li>
+                        </ul>
+                        <div class="primary-button">
+                            <a href="#a-m">Explore More!!</a>
+                        </div class="wea">
+                        <!-- weather widget start --><a target="_blank" href=""><img src="https://w.bookcdn.com/weather/picture/23_324261_1_1_f67280_250_f67280_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=8467"  alt="Connect To Internet"/></a><!-- weather widget end -->
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="service-item">
+                                <p>Bhagwan Parshuram Kund Mandir<a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4306835%2C4317915%2C4371334%2C4401769%2C4419364%2C4509341%2C4515404%2C4545890%2C4561952%2C4596364%2C4603491%2C4270859%2C4284970%2C4291517&hl=en-IN&gl=in&ssta=1&dest_mid=%2Fm%2F018ckn&dest_state_type=sattd&dest_src=ts&sa=X&ved=2ahUKEwjDtZ_2zp7yAhXMWisKHWX6BvcQ69EBKAAwAHoECAIQEw#ttdm=27.554527_96.239051_8"></a> </p>
+                                <div class="line-dec"></div>
+                                <p>Parshuram Kund is a Hindu pilgrimage sites situated on the Brahmaputra plateau in the lower reaches of the Lohit River and 21 km north of Tezu in Lohit district of Arunachal Pradesh, India.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-item">
+                                <h4>Kamlang Wildlife Sanctuary</h4>
+                                <div class="line-dec"></div>
+                                <p>The Kamlang Wildlife Sanctuary, established in 1989, is the 50th Tiger reserve in India. The Sanctuary is rich with floral and faunal diversity. It is situated in the Lohit District of the northeastern Indian state of Arunachal Pradesh. The park is named after the Kamlang River which flows through it. </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-item">
+                                <h4>Mehao Lake</h4>
+                                <div class="line-dec"></div>
+                                <p>The absolutely clear water of the lake attracts huge number of wild ducks. It is a vast lake covering an area of about 4 sq. km. The surroundings of this lake are extremely rich in flora and fauna.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-item">
+                                <h4>Golden Pagoda, Namsai</h4>
+                                <div class="line-dec"></div>
+                                <p>The Golden Pagoda of Namsai, also known as Kongmu Kham, in the Tai-Khamti language, is a Burmese-style Buddhist temple that was opened in 2010. It is located on a 20 hectare complex in Namsai District of Arunachal Pradesh, India and at a distance of 68 km from the nearest railway station Tinsukia, Assam. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="service-content" id="ass">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="left-text">
+                    <h4>Assam</h4>
+                    <div class="line-dec"></div>
+                    <div class="line-dec"></div>
+                    <p>Assam is a state in northeastern India known for its wildlife, archeological sites and tea plantations. In the west, Guwahati, Assam’s largest city, features silk bazaars and the hilltop Kamakhya Temple. Umananda Temple sits on Peacock Island in the Brahmaputra river. The state capital, Dispur, is a suburb of Guwahati. The ancient pilgrimage site of Hajo and Madan Kamdev, the ruins of a temple complex, lie nearby.</p>
+                    <ul>
+                        <li>-  Area: 78,438 km²</li>
+                        <li>-  Capital: Dispur </li>
+                        <li>-  Population: 3.09 crores (2012)</li>
+                        <li>-  Chief minister: Himanta Biswa Sarma</li>
+                    </ul>
+                    <div class="primary-button">
+                        <a href="#a-m">Explore More!!</a>
+                    </div class="wea">
+                    <!-- weather widget start --><a target="_blank" href=""><img src="https://w.bookcdn.com/weather/picture/23_154501_1_1_f67280_250_f67280_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=24432" alt="Connect To Internet"/></a><!-- weather widget end -->
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <p>Kamakhya Temple<a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4306835%2C4317915%2C4371334%2C4401769%2C4419364%2C4509341%2C4515404%2C4545890%2C4561952%2C4596364%2C4603491%2C4270859%2C4284970%2C4291517&hl=en-IN&gl=in&ssta=1&dest_mid=%2Fm%2F018ckn&dest_state_type=sattd&dest_src=ts&sa=X&ved=2ahUKEwjDtZ_2zp7yAhXMWisKHWX6BvcQ69EBKAAwAHoECAIQEw#ttdm=27.554527_96.239051_8"></a> </p>
+                            <div class="line-dec"></div>
+                            <p>The Kamakhya Temple is a Sakta temple dedicated to the mother goddess Kamakhya. It is one of the oldest of the 51 Shakti Pithas. It is the centrepiece of widely practiced, powerful Tantrik Shaktism cult in India.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>Kaziranga National Park</h4>
+                            <div class="line-dec"></div>
+                            <p>Kaziranga National Park is a protected area spread across the floodplains of the Brahmaputra River, its forests, wetlands and grasslands are home to tigers, elephants and the world’s largest population of Indian one-horned rhinoceroses. Ganges River dolphins swim in the park’s waters. It’s visited by many rare migratory birds, and gray pelicans roost near Kaziranga village</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>Manas National Park</h4>
+                            <div class="line-dec"></div>
+                            <p>Manas National Park or Manas Wildlife Sanctuary is a national park, UNESCO Natural World Heritage site, a Project Tiger reserve, an elephant reserve and a biosphere reserve in Assam, India. Located in the Himalayan foothills, it is contiguous with the Royal Manas National Park in Bhutan.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>Majuli</h4>
+                            <div class="line-dec"></div>
+                            <p>Majuli is a picturesque, lush green and pollution-free river island in the mighty River Brahmaputra. It is the world's largest river island and it attracts tourists from all over the world. Majuli is also a strong contender for a place in UNESCO's World Heritage Sites.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="service-content" id="meg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="left-text">
+                    <h4>Meghalaya</h4>
+                    <div class="line-dec"></div>
+                    <div class="line-dec"></div>
+                    <p>Meghalaya is a state in Northeast India. Meghalaya was formed by carving out two districts from the state of Assam: the United Khasi Hills and Jaintia Hills, and the Garo Hills on 21 January 1972.</p>
+                    <ul>
+                        <li>-  Area: 22,720 km²</li>
+                        <li>-  Capital: Shillong </li>
+                        <li>-  Population: 26.5 lakhs (2012)</li>
+                        <li>-  Chief minister: Conrad Sangma</li>
+                    </ul>
+                    <div class="primary-button">
+                        <a href="#a-m">Explore More!!</a>
+                    </div class="wea">
+                    <!-- weather widget start --><a target="_blank" href=""><img src="https://w.bookcdn.com/weather/picture/23_45737_1_1_f67280_250_f67280_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=77464" alt="Connect To Internet"/></a><!-- weather widget end -->
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <p>Mawsmai Cave<a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4306835%2C4317915%2C4371334%2C4401769%2C4419364%2C4509341%2C4515404%2C4545890%2C4561952%2C4596364%2C4603491%2C4270859%2C4284970%2C4291517&hl=en-IN&gl=in&ssta=1&dest_mid=%2Fm%2F018ckn&dest_state_type=sattd&dest_src=ts&sa=X&ved=2ahUKEwjDtZ_2zp7yAhXMWisKHWX6BvcQ69EBKAAwAHoECAIQEw#ttdm=27.554527_96.239051_8"></a> </p>
+                            <div class="line-dec"></div>
+                            <p>Mawsmai cave is one of the main tourist attractions in the Cherrapunji, which is credited as the wettest place on Earth. These magnificent caves are formed out of limestone and are quite long and deep.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>NohKaLikai Falls</h4>
+                            <div class="line-dec"></div>
+                            <p>Nohkalikai Falls is the tallest plunge waterfall in India. Its height is 340 metres. The waterfall is located in the Indian state of Meghalaya, near Cherrapunji, one of the wettest places on Earth. Nohkalikai Falls are fed by the rainwater collected on the summit of a comparatively small plateau and decrease in power during the dry season, from December to February. Below the falls is a plunge pool with unusual green-colored water.
+</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>Dainthlen Falls</h4>
+                            <div class="line-dec"></div>
+                            <p>The waterfall derives its name from a Thlen or a snake of gigantic size which dwelt in a cave. Legend has it that the people destroyed the snake in order to rid themselves of its reign of terror. Adjacent to the very spot where the Thlen was slaughtered lies the Dainthlen Waterfalls.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>Sky View Bangladesh</h4>
+                            <div class="line-dec"></div>
+                            <p>Any person who have visited Meghalaya, must have visited the village of Mawlynnong located in the East Khasi Hills, which was once awarded the Cleanest Village of Asia. Here we have one interesting point, namely the Sky View Point from where you will be able to get a beautiful Panoramic view of Bangladesh beyond the hills and its surroundings. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="service-content" id="miz">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="left-text">
+                    <h4>Mizoram</h4>
+                    <div class="line-dec"></div>
+                    <div class="line-dec"></div>
+                    <p>Mizoram is a state in northeastern India, with Aizawl as its seat of government and capital city. The name of the state is derived from "Mizo", the self described name of the native inhabitants, and "Ram", which in the Mizo language means "land." Thus "Mizo-ram" means "land of the Mizos".</p>
+                    <ul>
+                        <li>-  Area: 21,081 km²</li>
+                        <li>-  Capital: Aizawl </li>
+                        <li>-  Population: 11.2 lakhs (2014)</li>
+                        <li>-  Chief minister: Zoramthanga</li>
+                    </ul>
+                    <div class="primary-button">
+                        <a href="#a-m">Explore More!!</a>
+                    </div class="wea">
+                    <!-- weather widget start --><a target="_blank" href=""><img src="https://w.bookcdn.com/weather/picture/23_56039_1_1_f67280_250_f67280_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=27373" alt="Connect To Internet"/></a><!-- weather widget end -->
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <p>
+Lengteng Wildlife Sanctuary<a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4306835%2C4317915%2C4371334%2C4401769%2C4419364%2C4509341%2C4515404%2C4545890%2C4561952%2C4596364%2C4603491%2C4270859%2C4284970%2C4291517&hl=en-IN&gl=in&ssta=1&dest_mid=%2Fm%2F018ckn&dest_state_type=sattd&dest_src=ts&sa=X&ved=2ahUKEwjDtZ_2zp7yAhXMWisKHWX6BvcQ69EBKAAwAHoECAIQEw#ttdm=27.554527_96.239051_8"></a> </p>
+                            <div class="line-dec"></div>
+                            <p>Lengteng Wildlife Sanctuary is a protected area in Saitual district in eastern Mizoram, northeast India. It is an alpine forest and contains the second highest peak in Mizoram. It is specially a conservation interest on rare species of birds. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>Khawnglung Wildlife Sanctuary</h4>
+                            <div class="line-dec"></div>
+                            <p>Khawnglung is a mountain situated near Pangzawl in Aizawl – Lunglei road about 160 km from Aizawl.The best time to visit is between October and March for which one has to contact the Department of Environment and Forest, Mizoram.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>Champai</h4>
+                            <div class="line-dec"></div>
+                            <p>Champhai District is small, yet magically beautiful with its pristine valleys resplendent in a carpet of rhododendrons and well-maintained vineyards, passion-fruit orchards and kiwifruit plantations around the settlements soaring over smaller hills. Its picturesque hills turn greener as one heads higher, towards the Myanmar border. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>Thenzawl</h4>
+                            <div class="line-dec"></div>
+                            <p>It is a growing town situated at the heart of Mizoram in Serchhip District. The road to Thenzawl has one of the most spectacular views with rolling green hills covered in clouds that float beneath the ridges like a misty sea. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="service-content" id="nag">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="left-text">
+                    <h4>Nagaland</h4>
+                    <div class="line-dec"></div>
+                    <div class="line-dec"></div>
+                    <p>Nagaland is a mountainous state in northeast India, bordering Myanmar. It's home to diverse indigenous tribes, with festivals and markets celebrating the different tribes' culture. Its capital city of Kohima suffered heavy fighting in World War II, commemorated by memorials at the Kohima War Cemetery. The Nagaland State Museum exhibits ancient weaponry, a ceremonial drum and other traditional Naga cultural artifacts.</p>
+                    <ul>
+                        <li>-  Area: 16,579 km²</li>
+                        <li>-  Capital: Kohima </li>
+                        <li>-  Population: 22.8 lakhs (2012)</li>
+                        <li>-  Chief minister:  Neiphiu Rio</li>
+                    </ul>
+                    <div class="primary-button">
+                        <a href="#a-m">Explore More!!</a>
+                    </div class="wea">
+                    <!-- weather widget start --><a target="_blank" href=""><img src="https://w.bookcdn.com/weather/picture/23_324195_1_1_f67280_250_f67280_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=40508" alt="Connect To Internet"/></a><!-- weather widget end -->
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <p>Khonoma<a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4306835%2C4317915%2C4371334%2C4401769%2C4419364%2C4509341%2C4515404%2C4545890%2C4561952%2C4596364%2C4603491%2C4270859%2C4284970%2C4291517&hl=en-IN&gl=in&ssta=1&dest_mid=%2Fm%2F018ckn&dest_state_type=sattd&dest_src=ts&sa=X&ved=2ahUKEwjDtZ_2zp7yAhXMWisKHWX6BvcQ69EBKAAwAHoECAIQEw#ttdm=27.554527_96.239051_8"></a> </p>
+                            <div class="line-dec"></div>
+                            <p>
+Famed as Asia's first green village, the centuries-old Khonoma Village is a great place to introduce yourself to the Naga lifestyle and unwind in the lap of nature.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>War Cemetery</h4>
+                            <div class="line-dec"></div>
+                            <p>
+“When you go home, tell them of us and say for your tomorrow we gave our today,” reads an epitaph written by English classicist, John Maxwell Edmonds, as you walk through the gardens of Kohima's War Cemetery. Set amidst picturesque surroundings, the war cemetery was built in April, 1944, to honour the brave soldiers of the 2nd British Division of the Allied Forces, who lost their lives during the Second World War.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>Dzuleke</h4>
+                            <div class="line-dec"></div>
+                            <p>A quaint hill town village boasting ethereal natural beauty, Dzuleke is a beautiful spot to admire natural beauty. This off-beat travel destination lies about 40 km from the city centre and is most famous as the home of the bison. Sheltering some of the unique flora and fauna, the village also invites tourists for its rare species of rainbow trout.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>Hornbill Festival</h4>
+                            <div class="line-dec"></div>
+                            <p>An annual jamboree that sweeps the whole of Nagaland every December for 10 days is the Hornbill Festival. Hosted at the Kisama Heritage Village, on the outskirts of Kohima, it brings together the culture variety of the tribes of Nagaland. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="service-content" id="man">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="left-text">
+                    <h4>Manipur</h4>
+                    <div class="line-dec"></div>
+                    <div class="line-dec"></div>
+                    <p>Manipur is a state in northeastern India, with the city of Imphal as its capital. It is bounded by the Indian states of Nagaland to the north, Mizoram to the south and Assam to the west. It also borders two regions of Myanmar, Sagaing Region to the east and Chin State to the south. </p>
+                    <ul>
+                        <li>-  Area: 22,327 km²</li>
+                        <li>-  Capital: Imphal </li>
+                        <li>-  Population: 27.2 lakhs (2012)</li>
+                        <li>-  Chief minister: N. Biren Singh</li>
+                    </ul>
+                    <div class="primary-button">
+                        <a href="#a-m">Explore More!!</a>
+                    </div class="wea">
+                    <!-- weather widget start --><a target="_blank" href=""><img src="https://w.bookcdn.com/weather/picture/23_56325_1_1_f67280_250_f67280_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=74024" alt="Connect To Internet"/></a><!-- weather widget end -->
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <p>Loktak Lake<a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4306835%2C4317915%2C4371334%2C4401769%2C4419364%2C4509341%2C4515404%2C4545890%2C4561952%2C4596364%2C4603491%2C4270859%2C4284970%2C4291517&hl=en-IN&gl=in&ssta=1&dest_mid=%2Fm%2F018ckn&dest_state_type=sattd&dest_src=ts&sa=X&ved=2ahUKEwjDtZ_2zp7yAhXMWisKHWX6BvcQ69EBKAAwAHoECAIQEw#ttdm=27.554527_96.239051_8"></a> </p>
+                            <div class="line-dec"></div>
+                            <p>
+Bishnupur District |Distance from Imphal 48 km.Loktak Lake is the largest freshwater lake in northeast India. This iconic lake is famed for its unique floating islands (Phumdis) and the world’s only floating National park- the Keibul Lamjao. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>Dzuko Valley</h4>
+                            <div class="line-dec"></div>
+                            <p>Senapati District |Distance from Imphal 82.8 km.The Dzuko valley is a famous spot for adventure lovers and trekkers. Well known for its jaw-dropping landscapes and flora, the valley is among the best treks in Manipur. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>Shirui Hills</h4>
+                            <div class="line-dec"></div>
+                            <p>
+Ukhrul District |Distance from Imphal 90 km.   A scenic hilltop panorama covered with stretches of vibrant wildflowers and the rare state flower, the Shirui Lily. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>Sadu Chiru Waterfall</h4>
+                            <div class="line-dec"></div>
+                            <p>Senapati District |Distance from Imphal 20-25 km.A picturesque waterfall falling from a height of 300 meters (approx). The path to Sadu Chiru waterfalls is across fields, streams, forests and ultimately a climb up stone steps for a spectacular view of the lush green valley. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="service-content" id="sik">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="left-text">
+                    <h4>Sikkim</h4>
+                    <div class="line-dec"></div>
+                    <div class="line-dec"></div>
+                    <p>Sikkim is a state in northeast India, bordered by Bhutan, Tibet and Nepal. Part of the Himalayas, the area has a dramatic landscape that includes India’s highest mountain, 8,586m Kangchenjunga. Sikkim is also home to glaciers, alpine meadows and thousands of varieties of wildflowers. Steep paths lead to hilltop Buddhist monasteries such as Pemayangtse, which dates to the early 1700s.</p>
+                    <ul>
+                        <li>-  Area: 7,096 km²</li>
+                        <li>-  Capital: Gangtok </li>
+                        <li>-  Population: 6.19 lakhs (2012)</li>
+                        <li>-  Chief minister:  Prem Singh Tamang</li>
+                    </ul>
+                    <div class="primary-button">
+                        <a href="#a-m">Explore More!!</a>
+                    </div class="wea">
+                    <!-- weather widget start --><a target="_blank" href=""><img src="https://w.bookcdn.com/weather/picture/23_15243_1_1_f67280_250_f67280_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=58586" alt="Connect To Internet"/></a><!-- weather widget end -->
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <p>Rinchenpong Monastery<a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4306835%2C4317915%2C4371334%2C4401769%2C4419364%2C4509341%2C4515404%2C4545890%2C4561952%2C4596364%2C4603491%2C4270859%2C4284970%2C4291517&hl=en-IN&gl=in&ssta=1&dest_mid=%2Fm%2F018ckn&dest_state_type=sattd&dest_src=ts&sa=X&ved=2ahUKEwjDtZ_2zp7yAhXMWisKHWX6BvcQ69EBKAAwAHoECAIQEw#ttdm=27.554527_96.239051_8"></a> </p>
+                            <div class="line-dec"></div>
+                            <p>Rinchenpong Monastery is situated at the giddying height of 5,500ft. The third oldest monastery in Sikkim is perched on a mountain trail and offers a brilliant view of the Kanchenjunga. Besides the picturesque location, this gompa has a statue one doesn’t find in most other monasteries- Ati Buddha seated in the Yab-Yum position.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>Nathula Pass</h4>
+                            <div class="line-dec"></div>
+                            <p>Nathu la is a high altitude pass situated on the old silk route at the Indo-China border, and is the favourite hotspot for the tourists in Sikkim. Several visitors come here every year to enjoy the scenic trek to the valley while listening to the lyrical waterfalls astriding the road from Gangtok to Nathu la. It also offers the breathtaking view of the snow covered mountains under the light blue sky and the long winding roads.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>Hanuman Tok</h4>
+                            <div class="line-dec"></div>
+                            <p>Hanuman Tok Temple Gangtok
+This immaculate and a divine place located in the upper reaches of Gangtok, Hanuman Tok is dedicated to Lord Hanuman, the Hindu monkey God. It is a temple complex that is swarmed by devotees from all over the country.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>Yumthang Valley</h4>
+                            <div class="line-dec"></div>
+                            <p>The extremely picturesque Yumthang Valley is situated at an elevation of 3564 m in the North of Sikkim. The place is amongst the most famous tourist destinations in Sikkim, popularly known as the ‘valley of flowers’ because of its unique location above the line where no trees grow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="service-content" id="tri">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="left-text">
+                    <h4>Tripura</h4>
+                    <div class="line-dec"></div>
+                    <div class="line-dec"></div>
+                    <p>Tripura is a hilly state in northeast India, bordered on 3 sides by Bangladesh, and home to a diverse mix of tribal cultures and religious groups. In the capital Agartala, the imposing Ujjayanta Palace is set among Mughal gardens, and Gedu Mia’s Mosque has white marble domes and towers. South of the city, Neermahal summer palace sits in the middle of Lake Rudrasagar and blends Hindu and Islamic architectural styles.</p>
+                    <ul>
+                        <li>-  Area: 10,492 km²</li>
+                        <li>-  Capital: Agartala </li>
+                        <li>-  Population: 36.6 lakhs (2012)</li>
+                        <li>-  Chief minister: Biplab Kumar Deb</li>
+                    </ul>
+                    <div class="primary-button">
+                        <a href="#a-m">Explore More!!</a>
+                    </div class="wea">
+                    <!-- weather widget start --><a target="_blank" href=""><img src="https://w.bookcdn.com/weather/picture/23_46694_1_1_f67281_250_f67280_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=48187" alt="Connect To Internet"/></a><!-- weather widget end -->
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <p>Bhuvaneswari Temple<a href="https://www.google.com/travel/things-to-do/see-all?g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4306835%2C4317915%2C4371334%2C4401769%2C4419364%2C4509341%2C4515404%2C4545890%2C4561952%2C4596364%2C4603491%2C4270859%2C4284970%2C4291517&hl=en-IN&gl=in&ssta=1&dest_mid=%2Fm%2F018ckn&dest_state_type=sattd&dest_src=ts&sa=X&ved=2ahUKEwjDtZ_2zp7yAhXMWisKHWX6BvcQ69EBKAAwAHoECAIQEw#ttdm=27.554527_96.239051_8"></a> </p>
+                            <div class="line-dec"></div>
+                            <p>The Bhuvaneswari Temple is known for its exquisite architecture. This temple is located on the banks of the river Gomati. Composed by the Nobel Laureate Rabindranath Tagore, the temple serves as the back-drop of ‘Rajarshi’ and ‘Bisharjan’. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>Gumti Wildlife Sanctuary</h4>
+                            <div class="line-dec"></div>
+                            <p>The Gumti Wildlife Sanctuary is located in the south eastern extreme of Tripura. The sanctuary is famous for its elephants, Barking deer, Sambar and Bison. The sanctuary encompasses an are of </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>Tripura Museum</h4>
+                            <div class="line-dec"></div>
+                            <p>Tripura Government Museum is a store houses of priceless pieces that testify the beauty and intricacy involved in the quintessential arts and crafts of Tripura. The galleries showcase a wonderful collection of over 1645 historical memorabilia.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-item">
+                            <h4>Lake Domboor</h4>
+                            <div class="line-dec"></div>
+                            <p>Lake Domboor Massive lake formed due to the convergence of rivers Raima and Saima, it is spread over 45 sq km and has 48 islands. Known for its biodiversity, it is preffered by migratory birds. On January 14 every year, large crowds gather to celebrate ‘Pous Sankranti Mela’.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <div class="parallax-content contact-content" id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <div class="row">
+                            <form id="contact" action="" method="post">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                      <fieldset>
+                                        <input name="name" type="text" class="form-control" id="name" placeholder="NAME" required="">
+                                      </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <fieldset>
+                                        <input name="email" type="email" class="form-control" id="email" placeholder="EMAIL" required="">
+                                      </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <fieldset>
+                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="MESSAGE" required=""></textarea>
+                                      </fieldset>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <fieldset>
+                                        <button type="submit" id="form-submit" class="btn" onclick="writeData()">Send Message</button>
+                                      </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113946.64800845977!2d80.89861129281225!3d26.81345356534722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be29599f9d55b%3A0x63a4f82b9ef3ccc2!2sOmaxe%20Heights!5e0!3m2!1sen!2sin!4v1628399178369!5m2!1sen!2sin" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="primary-button">
+                        <a href="#home">Go To Top</a>
+                    </div>
+                    <ul>
+                        <li><a href="https://www.instagram.com/vidhisinha2002/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="mailto:vidhisinha2002@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                        <li><a href="http://linkedin.com/in/vidhi-sinha-226358191/"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://github.com/vidhisinha2002"><i class="fa fa-github"></i></a></li>
+                        <li><a href="https://vidhisinha2002.github.io/"><i class="fa fa-globe"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+            }
+            document.getElementById(cityName).style.display = "block";
+        }
+    </script>
+
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $(".fixed-side-navbar a, .primary-button a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+    </script>
+
+</body>
+</html>
