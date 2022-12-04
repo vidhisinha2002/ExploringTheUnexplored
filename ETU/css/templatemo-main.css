@@ -101,7 +101,7 @@ a:hover { color: #FF0; }
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border-color: black;
-  boder-right: 0;
+  border-right: 0;
 }
 .fixed-side-navbar .nav > li a:hover > span {
   color: black;
@@ -745,4 +745,9 @@ body.lb-disable-scrolling {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
+}
+.usn{
+  color: palevioletred;
+  font-style: normal;
+  font-weight: bold;
 }
